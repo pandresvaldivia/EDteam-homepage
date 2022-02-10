@@ -6,47 +6,62 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Domina la tecnología con EDteam</title>
 		<link rel="stylesheet" href="./src/styles/main.css" />
+		<link rel="stylesheet" href="./src/styles/icon.css" />
+		<link rel="stylesheet" href="./src/styles/wrapper.css" />
 		<link rel="stylesheet" href="./src/styles/header.css" />
 		<link rel="stylesheet" href="./src/styles/menu.css" />
 		<link rel="stylesheet" href="./src/styles/button.css" />
+		<link rel="stylesheet" href="./src/styles/switch-button.css" />
 	</head>
-	<body>
+	<body class="body">
 		<header class="header">
-			<div class="header__content">
-				<div class="header__block">
-					<div class="header__logo">
-						<img
-							class="header__logo-image"
-							src="./src/assets/images/logo-edteam.svg"
-							alt="Logo de EDteam"
-							aria-label="Logo de EDteam"
-							height="32"
-							width="100"
-						/>
+			<div class="wrapper">
+				<div class="header__content">
+					<div class="header__block">
+						<div class="header__logo">
+							<img
+								class="header__logo-image"
+								src="./src/assets/images/logo-edteam.svg"
+								alt="Logo de EDteam"
+								aria-label="Logo de EDteam"
+								height="32"
+								width="100"
+							/>
+						</div>
+						<nav class="menu__container">
+							<ul class="menu">
+								<li><a href="#" class="menu__item">Cursos</a></li>
+								<li><a href="#" class="menu__item">Carreras</a></li>
+								<li><a href="#" class="menu__item">Comunidad</a></li>
+								<li><a href="#" class="menu__item">Enseña en EDteam</a></li>
+								<li>
+									<a href="#" class="menu__item menu__item--premium"
+										>Sube a premium</a
+									>
+								</li>
+							</ul>
+						</nav>
 					</div>
-					<nav class="menu__container">
-						<ul class="menu">
-							<li><a href="#" class="menu__item">Cursos</a></li>
-							<li><a href="#" class="menu__item">Carreras</a></li>
-							<li><a href="#" class="menu__item">Comunidad</a></li>
-							<li><a href="#" class="menu__item">Enseña en EDteam</a></li>
-							<li>
-								<a href="#" class="menu__item menu__item--premium"
-									>Sube a premium</a
-								>
-							</li>
-						</ul>
-					</nav>
-				</div>
-				<div class="menu menu--secondary">
-					<form action="">
-						<input type="search" aria-label="Buscar cursos en EDteam" />
-						<i></i>
-					</form>
-					<a href="#" class="button button--app">Volver a la app</a>
+					<div class="menu menu--secondary">
+						<form action="">
+							<input type="search" aria-label="Buscar cursos en EDteam" />
+							<i></i>
+						</form>
+						<label class="switch-button">
+							<input
+								id="darkmode-button"
+								class="switch-button__input"
+								type="checkbox"
+							/>
+							<span class="switch-button__toggle"></span>
+						</label>
+						<a href="#" class="button button--app">Volver a la app</a>
+					</div>
 				</div>
 			</div>
 		</header>
 		<a href="#" class="button">Comienza a estudiar gratis</a>
+
+		<script src="./src/js/index.js" type="module"></script>
 	</body>
 </html>

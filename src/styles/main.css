@@ -47,10 +47,14 @@ body {
 
 :root {
 	--white: #ffffff;
+	--white10: #fbfdfe;
 	--grey10: #ecf0f3;
 	--yellow: #ffce7a;
+	--skyblue: #88c8f7;
 	--blue10: #1192ee;
 	--blue20: #162936;
+	--blue30: #063251;
+	--blue40: #121a21;
 	--fontBase: 'Inter', sans-serif;
 	--auxBase: 'Manrope', sans-serif;
 	--link: 400 0.875rem/1.4063rem var(--fontBase);
