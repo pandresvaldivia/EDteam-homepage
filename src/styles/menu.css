@@ -10,6 +10,11 @@
 	font: var(--link);
 	text-decoration: none;
 	color: var(--grey10);
+	transition: opacity 0.2s;
+	-webkit-transition: opacity 0.2s;
+	-moz-transition: opacity 0.2s;
+	-ms-transition: opacity 0.2s;
+	-o-transition: opacity 0.2s;
 }
 
 .menu__item--premium {

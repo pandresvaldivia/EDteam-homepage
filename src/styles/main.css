@@ -49,7 +49,11 @@ body {
 	--white: #ffffff;
 	--grey10: #ecf0f3;
 	--yellow: #ffce7a;
+	--blue10: #1192ee;
+	--blue20: #162936;
 	--fontBase: 'Inter', sans-serif;
 	--auxBase: 'Manrope', sans-serif;
 	--link: 400 0.875rem/1.4063rem var(--fontBase);
+	--button: 600 1rem/1.8rem var(--auxBase);
+	--button-small: 600 0.875rem/1.575rem var(--auxBase);
 }

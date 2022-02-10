@@ -8,38 +8,45 @@
 		<link rel="stylesheet" href="./src/styles/main.css" />
 		<link rel="stylesheet" href="./src/styles/header.css" />
 		<link rel="stylesheet" href="./src/styles/menu.css" />
+		<link rel="stylesheet" href="./src/styles/button.css" />
 	</head>
 	<body>
-		<header class="header">
-			<div class="header__logo">
-				<img
-					class="header__logo-image"
-					src="./src/assets/images/logo-edteam.svg"
-					alt="Logo de EDteam"
-					aria-label="Logo de EDteam"
-					height="32"
-					width="100"
-				/>
+		<header class="header__container">
+			<div class="header">
+				<div class="header__block">
+					<div class="header__logo">
+						<img
+							class="header__logo-image"
+							src="./src/assets/images/logo-edteam.svg"
+							alt="Logo de EDteam"
+							aria-label="Logo de EDteam"
+							height="32"
+							width="100"
+						/>
+					</div>
+					<nav class="menu__container">
+						<ul class="menu">
+							<li><a href="#" class="menu__item">Cursos</a></li>
+							<li><a href="#" class="menu__item">Carreras</a></li>
+							<li><a href="#" class="menu__item">Comunidad</a></li>
+							<li><a href="#" class="menu__item">Enseña en EDteam</a></li>
+							<li>
+								<a href="#" class="menu__item menu__item--premium"
+									>Sube a premium</a
+								>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<nav>
+					<form action="">
+						<input type="search" aria-label="Buscar cursos en EDteam" />
+						<i></i>
+					</form>
+					<a href="#" class="button">Comienza a estudiar gratis</a>
+					<a href="#" class="button button--app">Volver a la app</a>
+				</nav>
 			</div>
-			<nav class="menu__container">
-				<ul class="menu">
-					<li><a href="#" class="menu__item">Cursos</a></li>
-					<li><a href="#" class="menu__item">Carreras</a></li>
-					<li><a href="#" class="menu__item">Comunidad</a></li>
-					<li><a href="#" class="menu__item">Enseña en EDteam</a></li>
-					<li>
-						<a href="#" class="menu__item menu__item--premium"
-							>Sube a premium</a
-						>
-					</li>
-				</ul>
-			</nav>
-			<nav>
-				<form action="">
-					<input type="search" aria-label="Buscar cursos en EDteam" />
-					<i></i>
-				</form>
-			</nav>
 		</header>
 	</body>
 </html>
