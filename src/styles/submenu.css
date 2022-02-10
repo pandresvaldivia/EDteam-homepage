@@ -1,0 +1,44 @@
+.submenu {
+	position: absolute;
+	padding-block-start: 12px;
+}
+
+.submenu__content {
+	padding: 0;
+	list-style: none;
+	border-radius: 0.5rem;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	overflow: hidden;
+}
+
+.submenu__item {
+	padding-inline-start: 1.5rem;
+	padding-block: 1rem;
+	background: var(--white);
+	inline-size: 23.5rem;
+	font: var(--subitem);
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	text-decoration: none;
+	color: var(--grey40);
+}
+
+.submenu__item:hover {
+	background: var(--white20);
+	box-shadow: inset 0px 1px 0px 0px var(--grey10),
+		inset 0px -1px 0px 0px var(--grey10);
+}
+
+.darkmode .submenu__item {
+	background: var(--blue70);
+	box-shadow: inset 0px 1px 0px 0px var(--black40),
+		inset 0px -1px 0px 0px var(--black40);
+}
+
+.darkmode .submenu__item:hover {
+	background: var(--blue80);
+}
