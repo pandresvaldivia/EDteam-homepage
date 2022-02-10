@@ -1,3 +1,9 @@
+.header {
+	position: fixed;
+	inset-block-start: 0;
+	inset-inline: 0;
+}
+
 .header__content {
 	block-size: 6rem;
 	display: flex;
