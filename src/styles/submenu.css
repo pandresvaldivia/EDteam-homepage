@@ -1,6 +1,26 @@
 .submenu {
 	position: absolute;
 	padding-block-start: 12px;
+	transform: translateY(1.5rem);
+	-webkit-transform: translateY(1.5rem);
+	-moz-transform: translateY(1.5rem);
+	-ms-transform: translateY(1.5rem);
+	-o-transform: translateY(1.5rem);
+	opacity: 0;
+	transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+}
+
+.menu__item-container:hover .submenu {
+	transform: translateY(0);
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	opacity: 1;
 }
 
 .submenu__content {
