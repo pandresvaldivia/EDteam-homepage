@@ -2,6 +2,7 @@
 	background: var(--blue60);
 	padding-block: 120px 96px;
 	overflow: hidden;
+	position: relative;
 }
 
 .darkmode .hero {
@@ -72,4 +73,7 @@
 	);
 	mix-blend-mode: soft-light;
 	pointer-events: none;
+	-moz-transform: skew(-30deg, 0deg);
+	-ms-transform: skew(-30deg, 0deg);
+	-o-transform: skew(-30deg, 0deg);
 }
