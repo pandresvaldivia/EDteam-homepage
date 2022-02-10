@@ -9,6 +9,8 @@
 .menu--secondary {
 	gap: 0.75rem;
 	align-items: center;
+	flex: 1;
+	justify-content: flex-end;
 }
 
 .menu__item {

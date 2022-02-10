@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="./src/styles/menu.css" />
 		<link rel="stylesheet" href="./src/styles/button.css" />
 		<link rel="stylesheet" href="./src/styles/switch-button.css" />
+		<link rel="stylesheet" href="./src/styles/search.css" />
 	</head>
 	<body class="body">
 		<header class="header">
@@ -43,16 +44,17 @@
 						</nav>
 					</div>
 					<div class="menu menu--secondary">
-						<form action="">
-							<input type="search" aria-label="Buscar cursos en EDteam" />
-							<i></i>
-						</form>
-						<label class="switch-button">
+						<form class="search">
 							<input
-								id="darkmode-button"
-								class="switch-button__input"
-								type="checkbox"
+								class="search__input"
+								type="search"
+								aria-label="Buscar cursos en EDteam"
+								placeholder="¿Qué buscaremos hoy?"
 							/>
+							<i class="search__icon icon-search" aria-hidden="true"></i>
+						</form>
+						<label id="darkmode-button" class="switch-button">
+							<input class="switch-button__input" type="checkbox" />
 							<span class="switch-button__toggle"></span>
 						</label>
 						<a href="#" class="button button--app">Volver a la app</a>

@@ -3,7 +3,6 @@
 	display: flex;
 	gap: 2rem;
 	align-items: center;
-	justify-content: space-between;
 }
 
 .header__block {
