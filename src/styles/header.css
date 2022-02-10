@@ -1,0 +1,9 @@
+.header {
+	display: flex;
+	gap: 2rem;
+	block-size: 6rem;
+	align-items: center;
+	justify-content: space-between;
+	padding-inline: 1rem;
+	/* background: rgb(54, 54, 54); */
+}

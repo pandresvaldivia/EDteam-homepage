@@ -1,0 +1,55 @@
+body {
+	background: rgb(7, 7, 83);
+	margin: 0;
+}
+/* manrope-regular - latin */
+@font-face {
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../assets/fonts/manrope-v11-latin-regular.woff2') format('woff2'),
+		url('../assets/fonts/manrope-v11-latin-regular.woff') format('woff');
+}
+/* manrope-600 - latin */
+@font-face {
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 600;
+	src: url('../assets/fonts/manrope-v11-latin-600.woff2') format('woff2'),
+		url('../assets/fonts/manrope-v11-latin-600.woff') format('woff');
+}
+
+/* inter-regular - latin */
+@font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../assets/fonts/inter-v7-latin-regular.woff2') format('woff2'),
+		url('../assets/fonts/inter-v7-latin-regular.woff') format('woff');
+}
+
+/* inter-600 - latin */
+@font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	src: url('../assets/fonts/inter-v7-latin-600.woff2') format('woff2'),
+		url('../assets/fonts/inter-v7-latin-600.woff') format('woff');
+}
+/* inter-800 - latin */
+@font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 800;
+	src: url('../assets/fonts/inter-v7-latin-800.woff2') format('woff2'),
+		url('../assets/fonts/inter-v7-latin-800.woff') format('woff');
+}
+
+:root {
+	--white: #ffffff;
+	--grey10: #ecf0f3;
+	--yellow: #ffce7a;
+	--fontBase: 'Inter', sans-serif;
+	--auxBase: 'Manrope', sans-serif;
+	--link: 400 0.875rem/1.4063rem var(--fontBase);
+}
