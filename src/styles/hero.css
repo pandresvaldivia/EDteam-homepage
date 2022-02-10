@@ -1,6 +1,6 @@
 .hero {
 	background: var(--blue60);
-	padding-block: 120px 96px;
+	padding-block: 9.0625rem 6rem;
 	overflow: hidden;
 	position: relative;
 }
@@ -22,6 +22,10 @@
 
 .hero__image {
 	grid-column: 7 / -1;
+	position: relative;
+	margin: 0;
+	display: flex;
+	justify-content: center;
 }
 
 .hero__title {

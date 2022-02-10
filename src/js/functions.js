@@ -1,4 +1,5 @@
 import { $body, $search, $switchBtn, $searchIcon } from './selectors.js';
+import { timeout } from './utils/timeout.js';
 
 function toggleDarkmode(e) {
 	e.target.checked
@@ -26,4 +27,19 @@ function toggleSearch() {
 		: ($searchIcon.style.display = 'block');
 }
 
-export { toggleDarkmode, openSearch, toggleSearch, closeSearch };
+async function toggleAnimation() {
+	const techItems = document.querySelectorAll('.tech-animation__float-item');
+	for (const techItem of techItems) {
+		await timeout(1000);
+
+		techItem.classList.toggle('active');
+	}
+}
+
+export {
+	toggleDarkmode,
+	openSearch,
+	toggleSearch,
+	closeSearch,
+	toggleAnimation,
+};
