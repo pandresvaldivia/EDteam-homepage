@@ -48,9 +48,11 @@ body {
 :root {
 	--white: #ffffff;
 	--white10: #fbfdfe;
+	--white20: #f9fafb;
 	--grey10: #ecf0f3;
 	--grey20: #b7c1c8;
 	--grey30: #8e9ba4;
+	--grey40: #687782;
 	--yellow: #ffce7a;
 	--skyblue: #88c8f7;
 	--blue10: #1192ee;

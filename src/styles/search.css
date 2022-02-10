@@ -21,6 +21,10 @@
 	-o-border-radius: 0.25rem;
 	outline: none;
 	font: var(--small);
+	color: var(--grey40);
+}
+
+.darkmode .search__input {
 	color: var(--grey20);
 }
 
@@ -42,6 +46,11 @@
 }
 
 .search__icon:hover {
+	background: var(--white20);
+	color: var(--grey40);
+}
+
+.darkmode .search__icon:hover {
 	background: var(--black10);
 	color: var(--grey20);
 }
@@ -52,12 +61,20 @@
 
 .search--open .search__input {
 	inline-size: 100%;
+	background: var(--white20);
+}
+
+.darkmode .search--open .search__input {
 	background: var(--blue50);
 }
 
 .search--open .search__icon {
 	inset-inline-end: 0.625rem;
-	color: var(--grey20);
+	color: var(--grey40);
 	background: transparent;
 	cursor: text;
+}
+
+.darkmode .search--open .search__icon {
+	color: var(--grey20);
 }
