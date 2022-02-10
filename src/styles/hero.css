@@ -4,6 +4,10 @@
 	overflow: hidden;
 }
 
+.darkmode .hero {
+	background: var(--black20);
+}
+
 .hero__content {
 	display: grid;
 	grid-template-columns: repeat(11, 1fr);
@@ -59,7 +63,7 @@
 	background: -webkit-linear-gradient(
 		217deg,
 		#fff 5%,
-		hsla(0, 0%, 100%, 0.01) 95%
+		rgba(255, 255, 255, 0.01) 95%
 	);
 	background: linear-gradient(
 		233deg,

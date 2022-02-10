@@ -1,7 +1,3 @@
-body {
-	/* background: rgb(7, 7, 83); */
-	margin: 0;
-}
 /* manrope-regular - latin */
 @font-face {
 	font-family: 'Manrope';
@@ -64,6 +60,8 @@ body {
 	--blue50: #273b49;
 	--blue60: #0c6cb0;
 	--black10: #28353e;
+	--black20: #162936;
+	--black30: #1b2831;
 	--fontBase: 'Inter', sans-serif;
 	--auxBase: 'Manrope', sans-serif;
 	--headline1: 800 2.25rem/3.2625rem var(--fontBase);
@@ -74,4 +72,13 @@ body {
 	--small: 400 0.875rem/1.4rem var(--auxBase);
 	--normal: 400 1rem/28.8px var(--auxBase);
 	--tip: 400 13px/23.4px var(--auxBase);
+}
+
+.body {
+	margin: 0;
+	min-block-size: 100vh;
+}
+
+.darkmode.body {
+	background: var(--black30);
 }
