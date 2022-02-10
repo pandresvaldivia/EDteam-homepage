@@ -2,9 +2,14 @@ import { $body, $search, $switchBtn, $searchIcon } from './selectors.js';
 import { timeout } from './utils/timeout.js';
 
 function toggleDarkmode(e) {
-	e.target.checked
-		? $body.classList.add('darkmode')
-		: $body.classList.remove('darkmode');
+	if (e.target.checked) {
+		$body.classList.add('darkmode');
+		$switchBtn.ariaLabel = 'Desactivar modo oscuro';
+		return;
+	}
+
+	$body.classList.remove('darkmode');
+	$switchBtn.ariaLabel = 'Activar modo oscuro';
 }
 
 function openSearch() {

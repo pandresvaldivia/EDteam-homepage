@@ -26,6 +26,10 @@
 	margin: 0;
 	display: flex;
 	justify-content: center;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .hero__title {
