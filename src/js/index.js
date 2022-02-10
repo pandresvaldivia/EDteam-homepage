@@ -5,7 +5,10 @@ import {
 	toggleSearch,
 	closeSearch,
 	toggleAnimation,
+	setColorScheme,
 } from './functions.js';
+
+document.addEventListener('DOMContentLoaded', setColorScheme);
 
 $switchBtn.addEventListener('change', (e) => toggleDarkmode(e));
 

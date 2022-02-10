@@ -2,7 +2,11 @@ import { $body, $search, $switchBtn, $searchIcon } from './selectors.js';
 import { timeout } from './utils/timeout.js';
 
 function toggleDarkmode(e) {
-	if (e.target.checked) {
+	const $darkModeInput = $switchBtn.querySelector(
+		'input[type=checkbox]'
+	).checked;
+
+	if ($darkModeInput) {
 		$body.classList.add('darkmode');
 		$switchBtn.ariaLabel = 'Desactivar modo oscuro';
 		return;
@@ -41,10 +45,20 @@ async function toggleAnimation() {
 	}
 }
 
+function setColorScheme() {
+	if (window.matchMedia) {
+		if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+			$switchBtn.querySelector('input[type=checkbox]').checked = true;
+			toggleDarkmode();
+		}
+	}
+}
+
 export {
 	toggleDarkmode,
 	openSearch,
 	toggleSearch,
 	closeSearch,
 	toggleAnimation,
+	setColorScheme,
 };
