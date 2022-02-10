@@ -1,8 +1,14 @@
-.header__container {
+.header__content {
+	block-size: 6rem;
+	padding-inline: 1rem;
 	display: flex;
 	gap: 2rem;
-	block-size: 6rem;
 	align-items: center;
 	justify-content: space-between;
-	padding-inline: 1rem;
+}
+
+.header__block {
+	display: flex;
+	align-items: center;
+	gap: 2.5rem;
 }

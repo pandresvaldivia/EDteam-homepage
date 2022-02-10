@@ -6,6 +6,10 @@
 	gap: 2rem;
 }
 
+.menu--secondary {
+	gap: 0.5rem;
+}
+
 .menu__item {
 	font: var(--link);
 	text-decoration: none;
