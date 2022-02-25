@@ -1,7 +1,7 @@
 import { $body, $search, $switchBtn, $searchIcon } from './selectors.js';
 import { timeout } from './utils/timeout.js';
 
-function toggleDarkmode(e) {
+function toggleDarkmode() {
 	const $darkModeInput = $switchBtn.querySelector(
 		'input[type=checkbox]'
 	).checked;

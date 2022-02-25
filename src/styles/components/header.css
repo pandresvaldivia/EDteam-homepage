@@ -1,19 +1,19 @@
 .header {
-	position: fixed;
 	inset-block-start: 0;
 	inset-inline: 0;
+	position: fixed;
 	z-index: 1;
 }
 
 .header__content {
+	align-items: center;
 	block-size: 6rem;
 	display: flex;
 	gap: 2rem;
-	align-items: center;
 }
 
 .header__block {
-	display: flex;
 	align-items: center;
+	display: flex;
 	gap: 2.5rem;
 }

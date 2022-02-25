@@ -1,17 +1,15 @@
 .tech-animation {
-	position: absolute;
-	margin-inline: auto;
 	block-size: 100%;
+	margin-inline: auto;
+	position: absolute;
 }
 
 .tech-animation__float-item {
+	-webkit-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	-webkit-animation: float 3s ease-in-out alternate infinite;
 	transition: opacity 0.5s;
 	animation: float 3s ease-in-out alternate infinite;
-	-webkit-animation: float 3s ease-in-out alternate infinite;
-	-webkit-transition: opacity 0.5s;
-	-moz-transition: opacity 0.5s;
-	-ms-transition: opacity 0.5s;
-	-o-transition: opacity 0.5s;
 }
 
 .tech-animation__float-item:not(.active) {
@@ -40,10 +38,8 @@
 
 @keyframes float {
 	to {
-		transform: translateY(-1.25rem);
 		-webkit-transform: translateY(-1.25rem);
-		-moz-transform: translateY(-1.25rem);
 		-ms-transform: translateY(-1.25rem);
-		-o-transform: translateY(-1.25rem);
+		transform: translateY(-1.25rem);
 	}
 }

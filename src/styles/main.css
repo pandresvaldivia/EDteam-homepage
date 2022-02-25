@@ -1,88 +1,20 @@
-/* manrope-regular - latin */
-@font-face {
-	font-family: 'Manrope';
-	font-style: normal;
-	font-weight: 400;
-	src: url('../assets/fonts/manrope-v11-latin-regular.woff2') format('woff2'),
-		url('../assets/fonts/manrope-v11-latin-regular.woff') format('woff');
-}
-/* manrope-600 - latin */
-@font-face {
-	font-family: 'Manrope';
-	font-style: normal;
-	font-weight: 600;
-	src: url('../assets/fonts/manrope-v11-latin-600.woff2') format('woff2'),
-		url('../assets/fonts/manrope-v11-latin-600.woff') format('woff');
-}
+/* Settings */
+@import './settings/fonts.css';
+@import './settings/variables.css';
 
-/* inter-regular - latin */
-@font-face {
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 400;
-	src: url('../assets/fonts/inter-v7-latin-regular.woff2') format('woff2'),
-		url('../assets/fonts/inter-v7-latin-regular.woff') format('woff');
-}
+/* Elements */
+@import './elements/body.css';
 
-/* inter-600 - latin */
-@font-face {
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 600;
-	src: url('../assets/fonts/inter-v7-latin-600.woff2') format('woff2'),
-		url('../assets/fonts/inter-v7-latin-600.woff') format('woff');
-}
-/* inter-800 - latin */
-@font-face {
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 800;
-	src: url('../assets/fonts/inter-v7-latin-800.woff2') format('woff2'),
-		url('../assets/fonts/inter-v7-latin-800.woff') format('woff');
-}
+/* Objects: Elementos para el layout */
+@import './objects/wrapper.css';
 
-:root {
-	--white: #ffffff;
-	--white10: #fbfdfe;
-	--white20: #f9fafb;
-	--grey10: #ecf0f3;
-	--grey20: #b7c1c8;
-	--grey30: #8e9ba4;
-	--grey40: #687782;
-	--yellow: #ffce7a;
-	--yellow2: #ffdb9e;
-	--skyblue: #88c8f7;
-	--skyblue2: #a4d6f9;
-	--blue10: #1192ee;
-	--blue20: #162936;
-	--blue30: #063251;
-	--blue40: #121a21;
-	--blue50: #273b49;
-	--blue60: #0c6cb0;
-	--blue70: #192229;
-	--blue80: #121a21;
-	--black10: #28353e;
-	--black20: #162936;
-	--black30: #1b2831;
-	--black40: #212e36;
-	--fontBase: 'Inter', sans-serif;
-	--auxBase: 'Manrope', sans-serif;
-	--headline1: 800 2.25rem/3.2625rem var(--fontBase);
-	--headline2: 600 1.5625rem/3.2625rem var(--fontBase);
-	--link: 400 0.875rem/1.4063rem var(--fontBase);
-	--button: 600 1rem/1.8rem var(--auxBase);
-	--button-small: 600 0.875rem/1.575rem var(--auxBase);
-	--small: 400 0.875rem/1.4rem var(--auxBase);
-	--normal: 400 1rem/28.8px var(--auxBase);
-	--tip: 400 13px/23.4px var(--auxBase);
-	--subitem: 600 14px/25.2px var(--auxBase);
-}
-
-.body {
-	margin: 0;
-	min-block-size: 100vh;
-}
-
-.darkmode.body {
-	background: var(--black30);
-}
+/* Components */
+@import './components/icons.css';
+@import './components/header.css';
+@import './components/menu.css';
+@import './components/submenu.css';
+@import './components/button.css';
+@import './components/switch-button.css';
+@import './components/hero.css';
+@import './components/search.css';
+@import './components/tech-animation.css';

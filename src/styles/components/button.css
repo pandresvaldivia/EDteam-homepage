@@ -1,0 +1,27 @@
+.button {
+	background: var(--white);
+	border-radius: 0.25rem;
+	border: 1px solid var(--white);
+	color: var(--blue20);
+	display: inline-block;
+	font: var(--button);
+	padding-block: 0.5rem;
+	padding-inline: 1rem;
+	text-decoration: none;
+	-webkit-transition: -webkit-transform 0.05s;
+	transition: -webkit-transform 0.05s;
+	-o-transition: transform 0.05s;
+	transition: transform 0.05s;
+	transition: transform 0.05s, -webkit-transform 0.05s;
+}
+
+.button--app {
+	color: var(--blue10);
+	font: var(--button-small);
+}
+
+.button:not(.button--app):hover {
+	-webkit-transform: scale(1.02);
+	-ms-transform: scale(1.02);
+	transform: scale(1.02);
+}
