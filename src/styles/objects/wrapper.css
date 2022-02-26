@@ -1,10 +1,10 @@
 .wrapper {
-	/* padding-inline: 1rem; */
+	padding-inline: 1rem;
+	min-inline-size: 22.5rem;
+	max-inline-size: 87.5rem;
+	margin-inline: auto;
 }
 
 /* .wrapper {
-	max-inline-size: 87.5rem;
-	margin-inline: auto;
 	padding-inline: 1rem;
-	min-inline-size: 69.375rem;
 } */
