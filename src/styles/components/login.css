@@ -16,6 +16,11 @@
 	text-decoration: none;
 }
 
+.darkmode .login__button {
+	background: transparent;
+	color: var(--skyblue4);
+}
+
 .login__button i {
 	font-size: 1.5rem;
 }
@@ -27,6 +32,12 @@
 
 .login__button--singup:hover {
 	background: var(--blue90);
+}
+
+.darkmode .login__button--singup:hover,
+.darkmode .login__button--singup {
+	background: var(--skyblue4);
+	color: var(--white);
 }
 
 @media screen and (min-width: 1024px) {
