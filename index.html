@@ -130,24 +130,29 @@
 		<header class="header">
 			<div class="wrapper">
 				<div class="header__content">
-					<div class="header__block">
-						<div class="header__logo">
-							<a href="./index.html" aria-current="page">
-								<img
-									class="header__logo-image"
-									src="./src/assets/images/logo-edteam.svg"
-									alt="Logo de EDteam"
-									aria-label="Logo de EDteam"
-									height="32"
-									width="100"
-								/>
-							</a>
-						</div>
+					<!-- <div class="header__block"> -->
+					<div class="header__logo">
+						<a href="./index.html" aria-current="page">
+							<img
+								class="header__logo-image"
+								src="./src/assets/images/logo-edteam.svg"
+								alt="Logo de EDteam"
+								aria-label="Logo de EDteam"
+								height="32"
+								width="100"
+							/>
+						</a>
+					</div>
+					<div class="header__navigation">
 						<nav class="menu__container">
-							<ul class="menu">
+							<ul class="menu menu--primary">
 								<li class="menu__item-container">
 									<a href="#" class="menu__item menu-item--mega-menu"
-										>Cursos <i class="icon-rowdown" aria-hidden="true"></i
+										><img
+											src="./src/assets/icons/cursos.svg"
+											alt="Icono de cursos" />
+										<span>Cursos</span
+										><i class="icon-rowdown" aria-hidden="true"></i
 									></a>
 									<div class="submenu">
 										<ul class="submenu__content">
@@ -208,27 +213,34 @@
 									>
 								</li>
 							</ul>
+							<div class="login">
+								<a href="#" class="login__singin"></a>
+								<a href="#" class="login__singup"></a>
+							</div>
 						</nav>
 					</div>
-					<div class="menu menu--secondary">
-						<form class="search">
-							<input
-								class="search__input"
-								type="search"
-								aria-label="Buscar cursos en EDteam"
-								placeholder="¿Qué buscaremos hoy?"
-							/>
-							<i class="search__icon icon-search" aria-hidden="true"></i>
-						</form>
-						<label
-							id="darkmode-button"
-							class="switch-button"
-							aria-label="Activar modo oscuro"
-						>
-							<input class="switch-button__input" type="checkbox" />
-							<span class="switch-button__toggle" aria-hidden="true"></span>
-						</label>
-						<a href="#" class="button button--app">Volver a la app</a>
+					<!-- </div> -->
+					<div class="header__options">
+						<div class="menu menu--secondary">
+							<form class="search">
+								<input
+									class="search__input"
+									type="search"
+									aria-label="Buscar cursos en EDteam"
+									placeholder="¿Qué buscaremos hoy?"
+								/>
+								<i class="search__icon icon-search" aria-hidden="true"></i>
+							</form>
+							<label
+								id="darkmode-button"
+								class="switch-button"
+								aria-label="Activar modo oscuro"
+							>
+								<input class="switch-button__input" type="checkbox" />
+								<span class="switch-button__toggle" aria-hidden="true"></span>
+							</label>
+							<a href="#" class="button button--app">Volver a la app</a>
+						</div>
 					</div>
 				</div>
 			</div>

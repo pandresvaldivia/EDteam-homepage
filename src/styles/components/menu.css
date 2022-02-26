@@ -46,3 +46,31 @@
 .menu__container:hover .menu__item:not(:hover) {
 	opacity: 0.7;
 }
+
+/* ---------- */
+
+@media screen and (max-width: 1024px) {
+	.menu__container {
+		/* transform: translateX(100%); */
+		background: var(--white);
+		inline-size: 90%;
+	}
+
+	.menu--primary {
+		flex-direction: column;
+		gap: 0;
+	}
+
+	.menu__item {
+		padding-inline: 1.5rem;
+		padding-block: 0.9em;
+		display: block;
+	}
+
+	/* Eliminar */
+
+	.menu__item {
+		background: salmon;
+		color: black;
+	}
+}
