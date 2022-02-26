@@ -39,3 +39,9 @@
 	--tip: 400 13px/23.4px var(--auxBase);
 	--subitem: 600 14px/25.2px var(--auxBase);
 }
+
+@media screen and (max-width: 1024px) {
+	:root {
+		--link: 600 1rem/1.8em var(--fontBase);
+	}
+}

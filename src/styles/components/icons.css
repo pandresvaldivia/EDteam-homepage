@@ -1,3 +1,9 @@
+.icon-rowdown {
+	margin-inline-start: auto;
+}
+
+/* Codigo generado por Icomoon */
+
 [class^='icon-'],
 [class*=' icon-'] {
 	/* use !important to prevent issues with browser extensions that change fonts */
@@ -14,9 +20,24 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-singup:before {
+	content: '\e905';
+}
+.icon-user:before {
+	content: '\e906';
+}
+.icon-carreras:before {
+	content: '\e900';
+}
+.icon-cursos:before {
+	content: '\e901';
+}
+.icon-estrellas:before {
+	content: '\e902';
+}
+.icon-premium:before {
+	content: '\e904';
+}
 .icon-rowdown:before {
 	content: '\e903';
-}
-.icon-search:before {
-	content: '\e90d';
 }
