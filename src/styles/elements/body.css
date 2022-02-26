@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	min-block-size: 100vh;
+	min-inline-size: 22.5rem;
 }
 
 body.darkmode {

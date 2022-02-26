@@ -40,6 +40,10 @@
 	transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
+.menu__item-container .icon-rowdown {
+	margin-inline-start: auto;
+}
+
 .menu__item-container:hover .icon-rowdown::before {
 	display: inline-block;
 	-webkit-transform: rotate(-180deg);
@@ -84,6 +88,10 @@
 
 	.menu__item-image {
 		display: block;
+		font-size: 1.25rem;
+	}
+
+	.menu__item-container .icon-rowdown::before {
 		font-size: 1.25rem;
 	}
 }

@@ -1,0 +1,36 @@
+.login {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.login__button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.25rem;
+	padding-block: 1rem;
+	padding-inline: 1.5rem;
+	background: var(--skyblue3);
+	color: var(--blue10);
+	font: var(--link);
+	text-decoration: none;
+}
+
+.login__button i {
+	font-size: 1.5rem;
+}
+
+.login__button--singup {
+	background: var(--blue10);
+	color: var(--white);
+}
+
+.login__button--singup:hover {
+	background: var(--blue90);
+}
+
+@media screen and (min-width: 1024px) {
+	.login {
+		display: none;
+	}
+}
