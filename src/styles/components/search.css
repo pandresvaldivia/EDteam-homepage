@@ -37,6 +37,8 @@
 
 /* Expandir casillero de busqueda cuando este activo */
 .search.search--open {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
 	flex: 1;
 }
 

@@ -6,9 +6,8 @@
 
 .tech-animation__float-item {
 	-webkit-transition: opacity 0.5s;
-	-o-transition: opacity 0.5s;
-	-webkit-animation: float 3s ease-in-out alternate infinite;
 	transition: opacity 0.5s;
+	-webkit-animation: float 3s ease-in-out alternate infinite;
 	animation: float 3s ease-in-out alternate infinite;
 }
 
@@ -18,29 +17,40 @@
 
 /* Intercalar la animacion por cada tecnologia */
 .tech-animation__float-item:nth-child(5n + 1) {
+	-webkit-animation-delay: -1.5s;
 	animation-delay: -1.5s;
 }
 
 .tech-animation__float-item:nth-child(5n + 2) {
+	-webkit-animation-delay: -1s;
 	animation-delay: -1s;
 }
 
 .tech-animation__float-item:nth-child(5n + 3) {
+	-webkit-animation-delay: 0.5s;
 	animation-delay: 0.5s;
 }
 
 .tech-animation__float-item:nth-child(5n + 4) {
+	-webkit-animation-delay: -2s;
 	animation-delay: -2s;
 }
 
 .tech-animation__float-item:nth-child(5n + 5) {
+	-webkit-animation-delay: 2.5s;
 	animation-delay: 2.5s;
+}
+
+@-webkit-keyframes float {
+	to {
+		-webkit-transform: translateY(-1.25rem);
+		transform: translateY(-1.25rem);
+	}
 }
 
 @keyframes float {
 	to {
 		-webkit-transform: translateY(-1.25rem);
-		-ms-transform: translateY(-1.25rem);
 		transform: translateY(-1.25rem);
 	}
 }

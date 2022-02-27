@@ -1,4 +1,6 @@
 .menu {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	gap: 2rem;
 	list-style: none;
@@ -9,8 +11,15 @@
 .menu__container {
 	background: var(--white);
 	inline-size: 90%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 }
 
@@ -19,14 +28,23 @@
 }
 
 .menu--primary {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 	gap: 0;
 }
 
 .menu--secondary {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
 	flex: 1;
 	gap: 0.75rem;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
 	justify-content: flex-end;
 }
 
@@ -40,7 +58,11 @@
 	padding-inline: 1.5rem;
 	padding-block: 0.9em;
 	display: block;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	gap: 0.5rem;
 	color: var(--grey40);
@@ -52,6 +74,8 @@
 
 /* Bordes para el menu-item */
 .darkmode .menu__item-container:hover .menu__item {
+	-webkit-box-shadow: inset 0px 1px 0px 0px var(--black40),
+		inset 0px -1px 0px 0px var(--black40);
 	box-shadow: inset 0px 1px 0px 0px var(--black40),
 		inset 0px -1px 0px 0px var(--black40);
 }
@@ -69,13 +93,13 @@
 .menu-item--mega-menu i::before {
 	-webkit-transition: -webkit-transform 0.2s;
 	transition: -webkit-transform 0.2s;
-	-o-transition: transform 0.2s;
 	transition: transform 0.2s;
 	transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 /* Alinear a la derecha el icono dropdown version mobile */
 .menu__item-container .icon-rowdown {
+	-webkit-margin-start: auto;
 	margin-inline-start: auto;
 	font-size: 1.25rem;
 }
@@ -84,7 +108,6 @@
 .menu__item-container:hover .icon-rowdown::before {
 	display: inline-block;
 	-webkit-transform: rotate(-180deg);
-	-ms-transform: rotate(-180deg);
 	transform: rotate(-180deg);
 }
 
@@ -97,6 +120,9 @@
 	}
 
 	.menu--primary {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
 		flex-direction: row;
 		gap: 2rem;
 	}
@@ -119,6 +145,8 @@
 	}
 
 	.menu__item--hidden {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 	}
 
@@ -140,6 +168,7 @@
 	}
 
 	.darkmode .menu__item-container:hover .menu__item {
+		-webkit-box-shadow: none;
 		box-shadow: none;
 	}
 }

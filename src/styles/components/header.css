@@ -4,25 +4,36 @@
 	inset-inline: 0;
 	position: fixed;
 	z-index: 1;
+	-webkit-box-shadow: inset 0px -1px 0px 0px var(--grey10);
 	box-shadow: inset 0px -1px 0px 0px var(--grey10);
 }
 
 .darkmode .header {
 	background: var(--black40);
+	-webkit-box-shadow: inset 0px -1px 0px 0px var(--blue50);
 	box-shadow: inset 0px -1px 0px 0px var(--blue50);
 }
 
 .header__content {
+	display: -ms-grid;
 	display: grid;
+	-ms-grid-columns: auto 2rem 1fr;
 	grid-template-columns: auto 1fr;
 	block-size: 3.5rem;
+	-ms-flex-line-pack: center;
 	align-content: center;
+	-webkit-column-gap: 2rem;
+	-moz-column-gap: 2rem;
 	column-gap: 2rem;
 	row-gap: 0;
 }
 
 .header__logo {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 }
 
@@ -33,13 +44,22 @@
 	min-inline-size: 22.5rem;
 	inset-block-start: 3.5rem;
 	block-size: calc(100vh - 3.5rem);
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
 	justify-content: flex-end;
+	-webkit-transform: translateX(100%);
 	transform: translateX(100%);
+	-webkit-transition: background 0.25s 0.25s, -webkit-transform 0.25s;
+	transition: background 0.25s 0.25s, -webkit-transform 0.25s;
 	transition: transform 0.25s, background 0.25s 0.25s;
+	transition: transform 0.25s, background 0.25s 0.25s, -webkit-transform 0.25s;
 }
 
 .header__navigation.is-visible {
+	-webkit-transform: translateX(0);
 	transform: translateX(0);
 	background: rgba(40, 45, 49, 0.85);
 }
@@ -48,6 +68,7 @@
 	.header,
 	.darkmode .header {
 		background: transparent;
+		-webkit-box-shadow: none;
 		box-shadow: none;
 	}
 
@@ -56,14 +77,19 @@
 		block-size: auto;
 		background: transparent;
 		display: block;
+		-webkit-transform: translateX(0);
 		transform: translateX(0);
+		-webkit-transition: none;
 		transition: none;
 	}
 
 	.header__content {
 		grid-template-columns: repeat(2, auto) 1fr;
+		-ms-grid-rows: none;
 		grid-template-rows: none;
 		block-size: 6rem;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 		row-gap: 2rem;
 		position: relative;

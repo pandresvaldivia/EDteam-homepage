@@ -10,7 +10,9 @@
 }
 
 .hero__content {
+	display: -ms-grid;
 	display: grid;
+	-ms-grid-columns: 1fr;
 	grid-template-columns: 1fr;
 	text-align: center;
 	padding-inline: 1rem;
@@ -18,7 +20,11 @@
 }
 
 .hero__image {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	margin: 0;
 	position: relative;
@@ -36,6 +42,7 @@
 .hero__title {
 	color: var(--white);
 	font: var(--headline1);
+	-webkit-margin-after: 1.5rem;
 	margin-block-end: 1.5rem;
 	margin: 0;
 }
@@ -50,6 +57,7 @@
 .hero__paragraph {
 	color: var(--skyblue2);
 	font: var(--normal);
+	-webkit-margin-after: 1.5rem;
 	margin-block-end: 1.5rem;
 }
 
@@ -58,6 +66,7 @@
 	color: var(--skyblue2);
 	display: block;
 	font: var(--tip);
+	-webkit-margin-before: 0.5rem;
 	margin-block-start: 0.5rem;
 }
 
@@ -87,6 +96,8 @@
 	}
 
 	.hero__content {
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 		grid-template-columns: repeat(11, 1fr);
 		text-align: left;
@@ -97,6 +108,7 @@
 	}
 
 	.hero__block {
+		-ms-grid-column-span: 6;
 		grid-column: span 6;
 	}
 

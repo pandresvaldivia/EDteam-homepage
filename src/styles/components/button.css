@@ -10,7 +10,6 @@
 	text-decoration: none;
 	-webkit-transition: -webkit-transform 0.05s;
 	transition: -webkit-transform 0.05s;
-	-o-transition: transform 0.05s;
 	transition: transform 0.05s;
 	transition: transform 0.05s, -webkit-transform 0.05s;
 }
@@ -22,6 +21,5 @@
 
 .button:not(.button--app):hover {
 	-webkit-transform: scale(1.02);
-	-ms-transform: scale(1.02);
 	transform: scale(1.02);
 }

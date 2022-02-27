@@ -17,14 +17,19 @@
 }
 
 .submenu__item {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	background: var(--white20);
 	color: var(--grey30);
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	font: var(--subitem);
 	gap: 0.75rem;
 	padding-block: 1rem;
 	padding-inline: 1.5rem;
+	-webkit-padding-start: 4.7rem;
 	padding-inline-start: 4.7rem;
 	text-decoration: none;
 }
@@ -77,18 +82,23 @@
 	y evitar que el tamaño se agrande
 	*/
 	.darkmode .submenu__item {
+		-webkit-box-shadow: inset 0px 1px 0px 0px var(--black40),
+			inset 0px -1px 0px 0px var(--black40);
 		box-shadow: inset 0px 1px 0px 0px var(--black40),
 			inset 0px -1px 0px 0px var(--black40);
 	}
 
 	.submenu__item:hover {
 		background: var(--white20);
+		-webkit-box-shadow: inset 0px 1px 0px 0px var(--grey10),
+			inset 0px -1px 0px 0px var(--grey10);
 		box-shadow: inset 0px 1px 0px 0px var(--grey10),
 			inset 0px -1px 0px 0px var(--grey10);
 	}
 
 	.darkmode .submenu__item:hover {
 		background: var(--blue80);
+		-webkit-box-shadow: none;
 		box-shadow: none;
 	}
 
