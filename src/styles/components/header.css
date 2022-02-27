@@ -26,6 +26,7 @@
 	align-items: center;
 }
 
+/* Menu oculto para la version mobile */
 .header__navigation {
 	position: absolute;
 	inset-inline: 0;

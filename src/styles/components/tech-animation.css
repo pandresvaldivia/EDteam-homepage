@@ -16,6 +16,7 @@
 	opacity: 0;
 }
 
+/* Intercalar la animacion por cada tecnologia */
 .tech-animation__float-item:nth-child(5n + 1) {
 	animation-delay: -1.5s;
 }

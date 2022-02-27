@@ -8,10 +8,6 @@
 	overflow: hidden;
 }
 
-.menu--search .burger-menu {
-	display: none;
-}
-
 .burger-menu__middle,
 .burger-menu::before,
 .burger-menu::after {
@@ -46,6 +42,14 @@
 	-ms-transform: translateY(-0.75rem);
 	-o-transform: translateY(-0.75rem);
 }
+
+/* Ocultar elemento cuando se activa la busqueda */
+
+.menu--search .burger-menu {
+	display: none;
+}
+
+/* Efecto para tranormar el boton */
 
 .burger-menu.is-pressed .burger-menu__middle {
 	transform: translateX(-100%);

@@ -1,3 +1,5 @@
+/* Contenedor que delimita el ancho maximo del contenido */
+
 .wrapper {
 	padding-inline: 1rem;
 	max-inline-size: 87.5rem;

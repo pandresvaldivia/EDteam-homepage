@@ -50,11 +50,13 @@
 	background: var(--blue70);
 }
 
+/* Bordes para el menu-item */
 .darkmode .menu__item-container:hover .menu__item {
 	box-shadow: inset 0px 1px 0px 0px var(--black40),
 		inset 0px -1px 0px 0px var(--black40);
 }
 
+/* Elemento que se oculatra solo en la version mobile */
 .menu__item--hidden {
 	display: none;
 }
@@ -72,11 +74,13 @@
 	transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
+/* Alinear a la derecha el icono dropdown version mobile */
 .menu__item-container .icon-rowdown {
 	margin-inline-start: auto;
 	font-size: 1.25rem;
 }
 
+/* Efecto para el icono dropdown del item mega-menu */
 .menu__item-container:hover .icon-rowdown::before {
 	display: inline-block;
 	-webkit-transform: rotate(-180deg);
@@ -126,6 +130,7 @@
 		font-size: 1rem;
 	}
 
+	/* Resaltar el menu-item seleccionado */
 	.menu__container:hover .menu__item:not(:hover) {
 		opacity: 0.7;
 	}

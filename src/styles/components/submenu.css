@@ -5,6 +5,7 @@
 	transition: all 0.2s;
 }
 
+/* Medida del contenido para efecto */
 .menu__item-container:hover .submenu,
 .menu__item-container:focus-within .submenu {
 	block-size: 17.875rem;
@@ -46,8 +47,6 @@
 		position: absolute;
 		-webkit-transform: translateY(1.5rem);
 		transform: translateY(1.5rem);
-		-webkit-padding-before: 12px;
-		padding-block-start: 12px;
 	}
 
 	.menu__item-container:hover .submenu,
@@ -55,7 +54,9 @@
 		-webkit-transform: translateY(0);
 		transform: translateY(0);
 		opacity: 1;
-		block-size: 20rem;
+		block-size: 20.75rem;
+		-webkit-padding-before: 12px;
+		padding-block-start: 12px;
 	}
 
 	.submenu__content {
@@ -71,6 +72,10 @@
 		color: var(--grey40);
 	}
 
+	/* 
+	Uso las sombras internas para dar el efecto de border
+	y evitar que el tamaño se agrande
+	*/
 	.darkmode .submenu__item {
 		box-shadow: inset 0px 1px 0px 0px var(--black40),
 			inset 0px -1px 0px 0px var(--black40);

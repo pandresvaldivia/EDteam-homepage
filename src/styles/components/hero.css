@@ -46,12 +46,14 @@
 	font: var(--headline2);
 }
 
+/* Estilo para informacion principal */
 .hero__paragraph {
 	color: var(--skyblue2);
 	font: var(--normal);
 	margin-block-end: 1.5rem;
 }
 
+/* Estilo para informacion extra */
 .hero__tip {
 	color: var(--skyblue2);
 	display: block;
@@ -59,6 +61,7 @@
 	margin-block-start: 0.5rem;
 }
 
+/* Efecto iluminado para el background */
 .hero::before {
 	background: linear-gradient(
 		233deg,

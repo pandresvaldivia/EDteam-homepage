@@ -35,6 +35,7 @@
 	position: absolute;
 }
 
+/* Expandir casillero de busqueda cuando este activo */
 .search.search--open {
 	flex: 1;
 }

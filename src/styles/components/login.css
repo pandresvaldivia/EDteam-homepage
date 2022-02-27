@@ -1,3 +1,5 @@
+/* Login para menu de version mobile */
+
 .login {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
