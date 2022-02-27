@@ -1,14 +1,8 @@
 import { $switchBtn, $search, $burgerBtn } from './selectors.js';
-import {
-	toggleDarkmode,
-	openSearch,
-	toggleSearch,
-	closeSearch,
-	toggleAnimation,
-	setColorScheme,
-	resetMenu,
-	menuHandle,
-} from './functions.js';
+import { setColorScheme, toggleDarkmode } from './darkmode.js';
+import { closeSearch, openSearch, toggleSearch } from './components/search.js';
+import { menuHandle, resetMenu } from './components/menu.js';
+import { toggleAnimation } from './components/animation.js';
 
 document.addEventListener('DOMContentLoaded', setColorScheme);
 

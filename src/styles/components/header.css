@@ -17,23 +17,16 @@
 	grid-template-columns: auto 1fr;
 	block-size: 3.5rem;
 	align-content: center;
-	grid-template-areas: 'logo options';
 	column-gap: 2rem;
 	row-gap: 0;
 }
 
 .header__logo {
-	grid-area: logo;
 	display: flex;
 	align-items: center;
 }
 
-.header__options {
-	grid-area: options;
-}
-
 .header__navigation {
-	grid-area: navbar;
 	position: absolute;
 	inset-inline: 0;
 	min-inline-size: 22.5rem;
@@ -69,7 +62,6 @@
 	.header__content {
 		grid-template-columns: repeat(2, auto) 1fr;
 		grid-template-rows: none;
-		grid-template-areas: 'logo navbar options';
 		block-size: 6rem;
 		align-items: center;
 		row-gap: 2rem;
