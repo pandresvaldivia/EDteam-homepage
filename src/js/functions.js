@@ -34,7 +34,6 @@ function openSearch() {
 }
 
 function closeSearch() {
-	console.log('out');
 	$search.classList.remove('search--open');
 	$switchBtn.style.display = 'block';
 	$searchIcon.style.display = 'block';
@@ -71,12 +70,14 @@ function menuHandle() {
 		$menu.classList.add('is-visible');
 		$burgerBtn.ariaPressed = true;
 		$burgerBtn.ariaExpanded = true;
+		$burgerBtn.ariaLabel = 'Contraer menu';
 		return;
 	}
 
 	$menu.classList.remove('is-visible');
 	$burgerBtn.ariaPressed = false;
 	$burgerBtn.ariaExpanded = false;
+	$burgerBtn.ariaLabel = 'Expandir menu';
 }
 
 function resetMenu() {

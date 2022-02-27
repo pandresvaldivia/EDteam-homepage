@@ -45,6 +45,8 @@
 
 @media screen and (max-width: 1024px) {
 	:root {
+		--headline1: 800 2rem/1.45em var(--fontBase);
+		--headline2: 600 1.4375rem/1.45em var(--fontBase);
 		--link: 600 1rem/1.8em var(--fontBase);
 	}
 }
