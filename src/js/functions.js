@@ -1,4 +1,12 @@
-import { $body, $search, $switchBtn, $searchIcon } from './selectors.js';
+import {
+	$body,
+	$search,
+	$switchBtn,
+	$searchIcon,
+	$logo,
+	$burgerBtn,
+	$menu,
+} from './selectors.js';
 import { timeout } from './utils/timeout.js';
 
 function toggleDarkmode() {
@@ -9,11 +17,13 @@ function toggleDarkmode() {
 	if ($darkModeInput) {
 		$body.classList.add('darkmode');
 		$switchBtn.ariaLabel = 'Desactivar modo oscuro';
+		$logo.src = './src/assets/images/logo-alt.svg';
 		return;
 	}
 
 	$body.classList.remove('darkmode');
 	$switchBtn.ariaLabel = 'Activar modo oscuro';
+	$logo.src = './src/assets/images/logo.svg';
 }
 
 function openSearch() {
@@ -54,6 +64,28 @@ function setColorScheme() {
 	}
 }
 
+function menuHandle() {
+	const isPressed = $burgerBtn.classList.toggle('is-pressed');
+
+	if (isPressed) {
+		$menu.classList.add('is-visible');
+		$burgerBtn.ariaPressed = true;
+		$burgerBtn.ariaExpanded = true;
+		return;
+	}
+
+	$menu.classList.remove('is-visible');
+	$burgerBtn.ariaPressed = false;
+	$burgerBtn.ariaExpanded = false;
+}
+
+function resetMenu() {
+	if ($burgerBtn.classList.contains('is-pressed')) {
+		$burgerBtn.classList.remove('is-pressed');
+		$menu.classList.remove('is-visible');
+	}
+}
+
 export {
 	toggleDarkmode,
 	openSearch,
@@ -61,4 +93,6 @@ export {
 	closeSearch,
 	toggleAnimation,
 	setColorScheme,
+	resetMenu,
+	menuHandle,
 };

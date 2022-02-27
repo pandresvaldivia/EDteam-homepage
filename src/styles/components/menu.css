@@ -7,7 +7,6 @@
 }
 
 .menu__container {
-	/* transform: translateX(100%); */
 	background: var(--white);
 	inline-size: 90%;
 	display: flex;
@@ -29,6 +28,10 @@
 	flex: 1;
 	gap: 0.75rem;
 	justify-content: flex-end;
+}
+
+.menu--secondary .button--app {
+	display: none;
 }
 
 .menu__item {
@@ -92,6 +95,10 @@
 	.menu--primary {
 		flex-direction: row;
 		gap: 2rem;
+	}
+
+	.menu--secondary .button--app {
+		display: block;
 	}
 
 	.menu__item {

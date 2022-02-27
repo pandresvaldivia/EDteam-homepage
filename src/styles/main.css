@@ -12,8 +12,10 @@
 @import './components/icons.css';
 @import './components/header.css';
 @import './components/menu.css';
+@import './components/burger-menu.css';
 @import './components/submenu.css';
 @import './components/button.css';
+@import './components/profile-button.css';
 @import './components/switch-button.css';
 @import './components/hero.css';
 @import './components/search.css';

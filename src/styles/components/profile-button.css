@@ -1,0 +1,15 @@
+.profile-button {
+	border: none;
+	block-size: 2rem;
+	inline-size: 2rem;
+	border-radius: 50%;
+	overflow: hidden;
+	padding: 0;
+	cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+	.profile-button {
+		display: none;
+	}
+}

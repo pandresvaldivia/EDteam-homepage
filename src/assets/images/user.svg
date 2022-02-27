@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="16" cy="16" r="16" fill="#dfe0e0"/>
+    </clipPath>
+  </defs>
+  <g id="user" transform="translate(-138 -15)">
+    <circle id="bg" cx="16" cy="16" r="16" transform="translate(138 15)" fill="#dfe0e0"/>
+    <g id="avatar" transform="translate(138 15)">
+      <g id="Group_1" data-name="Group 1" clip-path="url(#clip-path)">
+        <g id="Group_6" data-name="Group 6" transform="translate(4.295 7.21)">
+          <path id="Path_15" data-name="Path 15" d="M117.607,13.631a6.816,6.816,0,1,0-6.816-6.816A6.834,6.834,0,0,0,117.607,13.631Z" transform="translate(-105.857)" fill="#53575a"/>
+          <path id="Path_16" data-name="Path 16" d="M47.612,252.8a6.354,6.354,0,0,0-.685-1.25,8.472,8.472,0,0,0-5.863-3.691,1.254,1.254,0,0,0-.863.208,7.265,7.265,0,0,1-8.572,0,1.117,1.117,0,0,0-.863-.208,8.41,8.41,0,0,0-5.863,3.691,7.325,7.325,0,0,0-.685,1.25.633.633,0,0,0,.03.566,11.872,11.872,0,0,0,.8,1.19,11.311,11.311,0,0,0,1.369,1.548,17.842,17.842,0,0,0,1.369,1.19,13.572,13.572,0,0,0,16.191,0,13.085,13.085,0,0,0,1.369-1.19,13.744,13.744,0,0,0,1.369-1.548,10.435,10.435,0,0,0,.8-1.19A.508.508,0,0,0,47.612,252.8Z" transform="translate(-24.165 -233.722)" fill="#53575a"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

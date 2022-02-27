@@ -132,14 +132,22 @@
 				<div class="header__content">
 					<div class="header__logo">
 						<a href="./index.html" aria-current="page">
-							<img
-								class="header__logo-image"
-								src="./src/assets/images/logo-edteam.svg"
-								alt="Logo de EDteam"
-								aria-label="Logo de EDteam"
-								height="32"
-								width="100"
-							/>
+							<picture aria-label="Logo de EDteam">
+								<source
+									srcset="./src/assets/images/logo-edteam.svg"
+									media="(min-width: 1024px)"
+									height="32"
+									width="100"
+									alt="Logo de EDteam"
+								/>
+								<img
+									id="logo"
+									src="./src/assets/images/logo.svg"
+									alt="Logo de EDteam"
+									height="32"
+									width="100"
+								/>
+							</picture>
 						</a>
 					</div>
 					<div class="header__navigation">
@@ -269,6 +277,23 @@
 								<input class="switch-button__input" type="checkbox" />
 								<span class="switch-button__toggle" aria-hidden="true"></span>
 							</label>
+							<button class="profile-button" aria-label="Ingresar a EDteam">
+								<img
+									class="profile-button__image"
+									src="./src/assets/images/user.svg"
+									alt="Imagen de un usuario"
+									height="32"
+									width="32"
+								/>
+							</button>
+							<button
+								class="burger-menu"
+								aria-label="Expandir menu"
+								aria-pressed="false"
+								aria-expanded="false"
+							>
+								<div class="burger-menu__middle"></div>
+							</button>
 							<a href="#" class="button button--app">Volver a la app</a>
 						</div>
 					</div>
