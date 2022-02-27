@@ -7,6 +7,10 @@
 	position: relative;
 }
 
+.menu--search .switch-button {
+	display: none;
+}
+
 .switch-button__input {
 	-webkit-appearance: none;
 	visibility: hidden;

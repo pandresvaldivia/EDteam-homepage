@@ -8,6 +8,10 @@
 	cursor: pointer;
 }
 
+.menu--search .profile-button {
+	display: none;
+}
+
 @media screen and (min-width: 1024px) {
 	.profile-button {
 		display: none;

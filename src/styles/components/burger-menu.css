@@ -8,6 +8,10 @@
 	overflow: hidden;
 }
 
+.menu--search .burger-menu {
+	display: none;
+}
+
 .burger-menu__middle,
 .burger-menu::before,
 .burger-menu::after {

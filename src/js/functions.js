@@ -6,6 +6,7 @@ import {
 	$logo,
 	$burgerBtn,
 	$menu,
+	$options,
 } from './selectors.js';
 import { timeout } from './utils/timeout.js';
 
@@ -28,14 +29,14 @@ function toggleDarkmode() {
 
 function openSearch() {
 	$search.classList.add('search--open');
+	$options.classList.add('menu--search');
 	$search.querySelector('.search__input').focus();
-	$switchBtn.style.display = 'none';
 	toggleSearch();
 }
 
 function closeSearch() {
 	$search.classList.remove('search--open');
-	$switchBtn.style.display = 'block';
+	$options.classList.remove('menu--search');
 	$searchIcon.style.display = 'block';
 }
 
