@@ -19,7 +19,7 @@
 	gap: 0.25rem;
 	padding-block: 1rem;
 	padding-inline: 1.5rem;
-	background: var(--skyblue3);
+	background: var(--skyblue10);
 	color: var(--blue10);
 	font: var(--link);
 	text-decoration: none;
@@ -27,7 +27,7 @@
 
 .darkmode .login__button {
 	background: transparent;
-	color: var(--skyblue4);
+	color: var(--skyblue40);
 }
 
 .login__button i {
@@ -40,12 +40,12 @@
 }
 
 .login__button--singup:hover {
-	background: var(--blue90);
+	background: var(--blue20);
 }
 
 .darkmode .login__button--singup:hover,
 .darkmode .login__button--singup {
-	background: var(--skyblue4);
+	background: var(--skyblue40);
 	color: var(--white);
 }
 

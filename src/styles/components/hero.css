@@ -1,5 +1,5 @@
 .hero {
-	background: var(--blue60);
+	background: var(--blue30);
 	overflow: hidden;
 	padding-block: 5.5rem 2rem;
 	position: relative;
@@ -48,14 +48,14 @@
 }
 
 .hero__title--small {
-	color: var(--yellow2);
+	color: var(--yellow20);
 	display: block;
 	font: var(--headline2);
 }
 
 /* Estilo para informacion principal */
 .hero__paragraph {
-	color: var(--skyblue2);
+	color: var(--skyblue20);
 	font: var(--normal);
 	-webkit-margin-after: 1.5rem;
 	margin-block-end: 1.5rem;
@@ -63,7 +63,7 @@
 
 /* Estilo para informacion extra */
 .hero__tip {
-	color: var(--skyblue2);
+	color: var(--skyblue20);
 	display: block;
 	font: var(--tip);
 	-webkit-margin-before: 0.5rem;

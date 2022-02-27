@@ -1,5 +1,5 @@
 .switch-button {
-	background: var(--skyblue);
+	background: var(--skyblue30);
 	block-size: 1rem;
 	border-radius: 1rem;
 	cursor: pointer;
@@ -34,12 +34,12 @@
 
 /* Cambiar el boton a Darkmode */
 .switch-button__input:checked ~ .switch-button__toggle {
-	background: var(--blue40) center no-repeat;
+	background: var(--blue70) center no-repeat;
 	background-image: url('../../assets/icons/moon.svg');
 	-webkit-transform: translateX(100%);
 	transform: translateX(100%);
 }
 
 .darkmode .switch-button {
-	background: var(--blue30);
+	background: var(--blue40);
 }

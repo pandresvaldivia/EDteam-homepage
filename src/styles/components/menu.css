@@ -69,7 +69,7 @@
 }
 
 .darkmode .menu__item-container:hover {
-	background: var(--blue70);
+	background: var(--blue90);
 }
 
 /* Bordes para el menu-item */
@@ -140,7 +140,7 @@
 	}
 
 	.menu__item--premium {
-		color: var(--yellow);
+		color: var(--yellow10);
 		font-weight: 600;
 	}
 
